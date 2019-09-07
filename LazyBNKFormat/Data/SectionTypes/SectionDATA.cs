@@ -58,13 +58,41 @@ namespace LazyBNKFormat.Data.SectionTypes {
 		}
 	}
 
+
 	/// <summary>
-	/// Lazy representation of a WEM file. Stores the file's ID (which is established in DIDX) and its raw data.
+	/// Slightly-not-as-lazy-as-V1 representation of a WEM file. Stores the file's ID (which is established in DIDX) and its raw data. Overrides == and != so that == returns true if the data within the two WEMFile objects is identical and their ID is identical.
 	/// </summary>
 	public class WEMFile {
 
-		public uint ID;
-		public byte[] Data;
+		public uint ID = 0;
+		public byte[] Data = null;
+
+
+		public static bool operator ==(WEMFile a, WEMFile b) {
+			if (a.ID != b.ID) return false;						// IDs are different.
+			if (a.Data == null && b.Data == null) return true;	// Both files have the same ID, and both files contain null data.
+			if (a.Data == null || b.Data == null) return false;	// One of the two has null data.
+			if (a.Data.Length != b.Data.Length) return false;   // Data length is different.
+
+			// This is where the more expensive stuff kicks in. We now need to iterate through the data manually and check equality of every byte.
+			for (int idx = 0; idx < a.Data.Length; idx++) {
+				if (a.Data[idx] != b.Data[idx]) return false;   // Something is different. Stop early and return the necessary value.
+			}
+			return true;
+		}
+
+		public static bool operator !=(WEMFile a, WEMFile b) {
+			if (a.ID != b.ID) return true;						// IDs are different.
+			if (a.Data == null && b.Data == null) return false; // Both files have the same ID, and both files contain null data.
+			if (a.Data == null || b.Data == null) return true;	// One of the two has null data.
+			if (a.Data.Length != b.Data.Length) return true;	// Data length is different.
+
+			// This is where the more expensive stuff kicks in. We now need to iterate through the data manually and check equality of every byte.
+			for (int idx = 0; idx < a.Data.Length; idx++) {
+				if (a.Data[idx] != b.Data[idx]) return true;	// Something is different. Stop early and return the necessary value.
+			}
+			return false;
+		}
 
 	}
 }

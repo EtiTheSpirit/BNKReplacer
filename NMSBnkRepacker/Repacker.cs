@@ -98,6 +98,7 @@ namespace NMSBnkRepacker {
 			FileInfo[] allFiles = userWEMFilesDirectory.GetFiles();
 			string[] indicesStr = File.ReadAllLines(@".\ConversionMap.txt");
 			uint[] indices = new uint[indicesStr.Length];
+			bool anyImplicit = false; // Stores whether or not ANY conversions are implicit. This will be used when checking input after this block of code.
 
 			// Replace the data. This will transform it from indicesStr being the file's lines into one of two things:
 			// 1: indices being every line as a uint
@@ -124,6 +125,8 @@ namespace NMSBnkRepacker {
 							Console.ReadLine();
 							return;
 						}
+					} else {
+						anyImplicit = true;
 					}
 				} else {
 					Console.ForegroundColor = ConsoleColor.Red;
@@ -137,7 +140,8 @@ namespace NMSBnkRepacker {
 				}
 			}
 
-			if (allFiles.Length != indices.Length) {
+			//QOL Update: What if we want to replace multiple files with one WEM? If all conversions are explicit, don't do a count check, just let it work.
+			if ((allFiles.Length != indices.Length) && anyImplicit) {
 				Console.ForegroundColor = ConsoleColor.Red;
 				Console.WriteLine("Your setup is incorrect! The amount of lines in the ConversionMap.txt file is different than the amount of files in the WEMFiles directory!");
 				Console.ForegroundColor = ConsoleColor.DarkRed;

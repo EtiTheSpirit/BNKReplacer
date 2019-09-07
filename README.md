@@ -5,6 +5,7 @@ A tool to replace existing sound files within Wwise BNK audio archives.
 BNKReplacer **CAN**...
 * Replace existing WEM files present inside of a BNK file with substitute WEM files you specify.
 * Replace existing WEM files with basically anything. Hell, pack a meme in for a sound for all I care. It'll break the game. But hey, it works.
+* **(Via BNKMerger, see Releases V2.0 and after)** Merge multiple BNK files that are mods of the same main BNK file with different contents to create a singular BNK file with both changes, as well as resolve conflicts between files if necessary.
 
 BNKReplacer **CAN NOT**...
 * Add new files to a BNK. Sorry. That requires some modification of other parts of the BNK file that isn't documented. :(

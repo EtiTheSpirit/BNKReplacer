@@ -1,0 +1,6 @@
+F:\Users\Xan\source\repos\NMSBnkRepacker\LazyBNKFormat\bin\Release\LazyBNKFormat.dll
+F:\Users\Xan\source\repos\NMSBnkRepacker\LazyBNKFormat\bin\Release\LazyBNKFormat.pdb
+F:\Users\Xan\source\repos\NMSBnkRepacker\LazyBNKFormat\obj\Release\LazyBNKFormat.csprojAssemblyReference.cache
+F:\Users\Xan\source\repos\NMSBnkRepacker\LazyBNKFormat\obj\Release\LazyBNKFormat.csproj.CoreCompileInputs.cache
+F:\Users\Xan\source\repos\NMSBnkRepacker\LazyBNKFormat\obj\Release\LazyBNKFormat.dll
+F:\Users\Xan\source\repos\NMSBnkRepacker\LazyBNKFormat\obj\Release\LazyBNKFormat.pdb

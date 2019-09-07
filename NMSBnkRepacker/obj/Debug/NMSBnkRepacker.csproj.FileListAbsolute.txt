@@ -1,0 +1,10 @@
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkRepacker\bin\Debug\NMSBnkRepacker.exe.config
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkRepacker\bin\Debug\NMSBnkRepacker.exe
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkRepacker\bin\Debug\NMSBnkRepacker.pdb
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkRepacker\bin\Debug\BNKFormat.dll
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkRepacker\bin\Debug\BNKFormat.pdb
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkRepacker\obj\Debug\NMSBnkRepacker.csprojAssemblyReference.cache
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkRepacker\obj\Debug\NMSBnkRepacker.csproj.CoreCompileInputs.cache
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkRepacker\obj\Debug\NMSBnkRepacker.csproj.CopyComplete
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkRepacker\obj\Debug\NMSBnkRepacker.exe
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkRepacker\obj\Debug\NMSBnkRepacker.pdb

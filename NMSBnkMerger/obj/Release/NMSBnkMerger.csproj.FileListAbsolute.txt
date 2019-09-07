@@ -1,0 +1,12 @@
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkMerger\bin\Release\NMSBnkMerger.exe.config
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkMerger\bin\Release\NMSBnkMerger.exe
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkMerger\bin\Release\NMSBnkMerger.pdb
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkMerger\obj\Release\NMSBnkMerger.csprojAssemblyReference.cache
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkMerger\obj\Release\NMSBnkMerger.csproj.CoreCompileInputs.cache
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkMerger\obj\Release\NMSBnkMerger.exe
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkMerger\obj\Release\NMSBnkMerger.pdb
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkMerger\bin\Release\BNKPatcher.dll
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkMerger\bin\Release\LazyBNKFormat.dll
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkMerger\bin\Release\BNKPatcher.pdb
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkMerger\bin\Release\LazyBNKFormat.pdb
+F:\Users\Xan\source\repos\NMSBnkRepacker\NMSBnkMerger\obj\Release\NMSBnkMerger.csproj.CopyComplete

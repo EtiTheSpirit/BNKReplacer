@@ -18,6 +18,10 @@ BNKReplacer **CAN NOT**...
 
 ## Step 2: Write a list of IDs in the text document. These IDs should be the IDs of files within the BNK file you're going to modify.
 
+**Use a tool like No Man's Audio Suite to get ahold of these IDS!** https://github.com/monkeyman192/No-Man-s-Audio-Suite
+
+**To create WEM files, use Wwise's tools! Here's a great video tutorial: https://www.youtube.com/watch?v=39Oeb4GvxEc**
+
 ### Method #1:
 ![Method 1](https://i.imgur.com/Wpsfy8k.png)
 

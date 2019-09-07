@@ -29,3 +29,7 @@ BNKReplacer **CAN NOT**...
 ![Method 2](https://i.imgur.com/8Tj0KNz.png)
 
 (You can mix and match these methods too!)
+
+## Step 3: Run the EXE
+
+When you run the EXE, it will prompt you for the input and output file destinations. You can alternatively run it via a command line. The first argument is the input file, the second is the output file. If you suck with command lines, just double click the file and it'll guide you through.

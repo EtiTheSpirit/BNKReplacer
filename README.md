@@ -1,7 +1,7 @@
 # BNKReplacer
 A tool to replace existing sound files within Wwise BNK audio archives.
 
-# Capabilities
+# Capabilities:
 BNKReplacer **CAN**...
 * Replace existing WEM files present inside of a BNK file with substitute WEM files you specify.
 * Replace existing WEM files with basically anything. Hell, pack a meme in for a sound for all I care. It'll break the game. But hey, it works.
@@ -34,3 +34,6 @@ BNKReplacer **CAN NOT**...
 ## Step 3: Run the EXE
 
 When you run the EXE, it will prompt you for the input and output file destinations. You can alternatively run it via a command line. The first argument is the input file, the second is the output file. If you suck with command lines, just double click the file and it'll guide you through.
+
+# Developers:
+All code is fully documented so ideally working with the code should be relatively straightforward. The only horribly messy parts are where console writing is done.

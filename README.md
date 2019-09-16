@@ -21,7 +21,7 @@ BNKReplacer **CAN NOT**...
 
 **Use a tool like No Man's Audio Suite to get ahold of these IDs!** https://github.com/monkeyman192/No-Man-s-Audio-Suite
 
-**To create WEM files, use Wwise's tools! Here's a great video tutorial: https://www.youtube.com/watch?v=39Oeb4GvxEc**
+~~**To create WEM files, use Wwise's tools! Here's a great video tutorial: https://www.youtube.com/watch?v=39Oeb4GvxEc**~~ (No longer needed! See v3.0)
 
 ### Method #1:
 ![Method 1](https://i.imgur.com/Wpsfy8k.png)

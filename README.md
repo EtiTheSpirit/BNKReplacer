@@ -13,7 +13,7 @@ BNKReplacer **CAN NOT**...
 
 # Usage:
 ## Step 1: Make a file and a folder in the same directory as the EXE.
-![Setup](https://i.imgur.com/GfhZM8H.png)
+![Setup](https://i.imgur.com/D8KZveR.png)
 
 ***
 

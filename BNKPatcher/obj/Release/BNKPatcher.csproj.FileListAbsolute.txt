@@ -1,0 +1,9 @@
+F:\Users\Xan\source\repos\NMSBnkRepacker\BNKPatcher\bin\Release\BNKPatcher.dll
+F:\Users\Xan\source\repos\NMSBnkRepacker\BNKPatcher\bin\Release\BNKPatcher.pdb
+F:\Users\Xan\source\repos\NMSBnkRepacker\BNKPatcher\bin\Release\LazyBNKFormat.dll
+F:\Users\Xan\source\repos\NMSBnkRepacker\BNKPatcher\bin\Release\LazyBNKFormat.pdb
+F:\Users\Xan\source\repos\NMSBnkRepacker\BNKPatcher\obj\Release\BNKPatcher.csprojAssemblyReference.cache
+F:\Users\Xan\source\repos\NMSBnkRepacker\BNKPatcher\obj\Release\BNKPatcher.csproj.CoreCompileInputs.cache
+F:\Users\Xan\source\repos\NMSBnkRepacker\BNKPatcher\obj\Release\BNKPatcher.csproj.CopyComplete
+F:\Users\Xan\source\repos\NMSBnkRepacker\BNKPatcher\obj\Release\BNKPatcher.dll
+F:\Users\Xan\source\repos\NMSBnkRepacker\BNKPatcher\obj\Release\BNKPatcher.pdb

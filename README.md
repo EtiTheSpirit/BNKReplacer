@@ -8,7 +8,7 @@ BNKReplacer **CAN**...
 * **(Via BNKMerger, see Releases V2.0 and after)** Merge multiple BNK files that are mods of the same main BNK file with different contents to create a singular BNK file with both changes, as well as resolve conflicts between files if necessary.
 
 BNKReplacer **CAN NOT**...
-* Add new files to a BNK. Sorry. That requires some modification of other parts of the BNK file that isn't documented. :(
+* Add new files to a BNK. Sorry. That requires some modification of other parts of the BNK file that aren't up to date in documentation (Trust me. I spent a couple hours implementing http://wiki.xentax.com/index.php/Wwise_SoundBank_(*.bnk) only for the data to not match up for the vast majority of the components.)
 * Remove files from the BNK. Same reason as above.
 
 # Usage:

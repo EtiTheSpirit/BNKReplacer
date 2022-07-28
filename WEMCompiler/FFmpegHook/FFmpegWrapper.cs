@@ -50,7 +50,7 @@ namespace WEMCompiler.FFmpegHook {
 			};
 			Process ffmpeg = Process.Start(ffmpegInfo);
 			ffmpeg.WaitForExit();
-			return new FileInfo(@".\TEMP\export.wav");
+			return new FileInfo(Path.Combine(tempConversionDir.FullName, "export.wav"));
 		}
 
 		/// <summary>

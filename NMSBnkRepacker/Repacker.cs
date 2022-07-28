@@ -14,6 +14,8 @@ using WEMCompiler.FFmpegHook;
 namespace NMSBnkRepacker {
 	class Repacker {
 
+		public const string AUDIO_TEMP_DIR = @".\AUDIO_TEMP\";
+
 		static void Main(string[] args) {
 			// Laziness 100
 			try {
@@ -270,7 +272,7 @@ namespace NMSBnkRepacker {
 								}
 								else {
 									// Catch case! What if we reference this file multiple times? Have we already converted it to a wem?
-									if (!File.Exists(@".\AUDIO_TEMP\" + info.Name + ".wem")) {
+									if (!File.Exists(AUDIO_TEMP_DIR + info.Name + ".wem")) {
 										if (info.Extension.ToLower() != ".wav") {
 											Console.WriteLine("Converting " + info.Name + " to WAV via ffmpeg...");
 										}
@@ -281,7 +283,7 @@ namespace NMSBnkRepacker {
 									else {
 										// Yes we did! So let's just grab that instead.
 										Console.WriteLine("Already converted " + info.Name + " to WEM. Referencing existing file...");
-										fStr = File.OpenRead(@".\AUDIO_TEMP\" + info.Name + ".wem");
+										fStr = File.OpenRead(AUDIO_TEMP_DIR + info.Name + ".wem");
 									}
 								}
 								break;
@@ -296,7 +298,7 @@ namespace NMSBnkRepacker {
 						}
 						else {
 							// Catch case! What if we reference this file multiple times? Have we already converted it to a wem?
-							if (!File.Exists(@".\AUDIO_TEMP\" + info.Name + ".wem")) {
+							if (!File.Exists(AUDIO_TEMP_DIR + info.Name + ".wem")) {
 								if (info.Extension.ToLower() != ".wav") {
 									Console.WriteLine("Converting " + info.Name + " to WAV via ffmpeg...");
 								}
@@ -307,7 +309,7 @@ namespace NMSBnkRepacker {
 							else {
 								// Yes we did! So let's just grab that instead.
 								Console.WriteLine("Already converted " + info.Name + " to WEM. Referencing existing file...");
-								fStr = File.OpenRead(@".\AUDIO_TEMP\" + info.Name + ".wem");
+								fStr = File.OpenRead(AUDIO_TEMP_DIR + info.Name + ".wem");
 							}
 						}
 					}
@@ -359,17 +361,17 @@ namespace NMSBnkRepacker {
 
 		private static FileInfo ConvertToWEM(FileInfo file) {
 			DirectoryInfo dir;
-			if (!Directory.Exists(@".\AUDIO_TEMP")) {
-				dir = Directory.CreateDirectory(@".\AUDIO_TEMP");
+			if (!Directory.Exists(AUDIO_TEMP_DIR)) {
+				dir = Directory.CreateDirectory(AUDIO_TEMP_DIR);
 				dir.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
 			} else {
-				dir = new DirectoryInfo(@".\AUDIO_TEMP");
+				dir = new DirectoryInfo(AUDIO_TEMP_DIR);
 			}
 			if (file.Extension.ToLower() == ".wav") {
 				WAVFile wav = new WAVFile(file.FullName);
 				WEMFile wem = wav.ConvertToWEM();
 
-				string newWemPath = @".\AUDIO_TEMP\" + file.Name + ".wem";
+				string newWemPath = AUDIO_TEMP_DIR + file.Name + ".wem";
 				return wem.SaveToFile(newWemPath);
 			} else {
 				// Guarantees the extension is wav.

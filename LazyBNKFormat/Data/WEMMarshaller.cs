@@ -145,7 +145,11 @@ namespace LazyBNKFormat.Data {
 					return;
 				}
 			}
-			throw new InvalidOperationException("The specified new WEM file has an ID that does not already exist within this BNK!");
+			ConsoleColor old = Console.ForegroundColor;
+			Console.ForegroundColor = ConsoleColor.Red;
+			Console.WriteLine("Failed to find WEM file in this BNK with the ID " + newFile.ID + " - The file replacing it has NOT been copied!");
+			Console.ForegroundColor = old;
+			//throw new InvalidOperationException("The specified new WEM file has an ID that does not already exist within this BNK!");
 		}
 
 		/// <summary>

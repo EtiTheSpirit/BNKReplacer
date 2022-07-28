@@ -17,7 +17,16 @@ namespace NMSBnkRepacker {
 		public const string AUDIO_TEMP_DIR = @".\AUDIO_TEMP\";
 
 		static void Main(string[] args) {
-			// Laziness 100
+
+			if (!File.Exists(@".\ConversionMap.txt")) {
+				Console.ForegroundColor = ConsoleColor.Red;
+				Console.WriteLine("Missing conversion map.");
+				Console.ForegroundColor = ConsoleColor.Yellow;
+				Console.WriteLine("The file has been created for you (ConversionMap.txt). Open it for instructions on how to use it.");
+				CreateTemplateConversionMap();
+			}
+
+				// Laziness 100
 			try {
 				Console.SetBufferSize(160, 300);
 				Console.SetWindowSize(160, 60);
@@ -100,15 +109,12 @@ namespace NMSBnkRepacker {
 			if (!File.Exists(@".\ConversionMap.txt")) {
 				CreateTemplateConversionMap();
 				Console.ForegroundColor = ConsoleColor.Red;
-				Console.WriteLine("Your setup is incorrect! Make a new text document named ConversionMap.txt in the same directory as this EXE.");
-				Console.ForegroundColor = ConsoleColor.DarkRed;
-				Console.WriteLine("The file has been created for you. This file should have a single WEM file ID on each line. This ID is the file that you want to replace in the game's data.");
-				Console.WriteLine("If you only write a number on a line, it will assume that the Nth file in the directory is the replacement (e.g. line 5 assumes the 5th file in your directory is its replacement)");
-				Console.WriteLine("You can alternatively write a number and a filename on the same line. For instance: 12345 myFileName.WEM -- This will specifically look for myFileName.WEM in your directory.");
-				Console.ForegroundColor = ConsoleColor.Green;
-				Console.WriteLine("Press any key quit...");
-				Console.ReadKey(true);
-				return;
+				Console.WriteLine("Missing conversion map.");
+				Console.ForegroundColor = ConsoleColor.Yellow;
+				Console.WriteLine("The file has been created for you (ConversionMap.txt). Open it for instructions on how to use it.");
+				Console.ForegroundColor = ConsoleColor.Magenta;
+				Console.WriteLine("Edit this file as per its instructions FIRST, then press the enter key once you are done with your edits.");
+				Console.ReadLine();
 			}
 
 
